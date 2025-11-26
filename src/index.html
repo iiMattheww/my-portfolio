@@ -7,9 +7,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="btn.css">
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
     <script defer src="main.js"></script>
-    <title>Document</title>
+    <title>Welcome</title>
 </head>
 
 <body>
@@ -25,14 +26,18 @@
                     <p class="aside-text">About Me</p>
                 </li>
                 <li onclick="Navigate(2)">
-                    <i class="fa-solid fa-list"></i>
+                    <i class="fa-solid fa-graduation-cap"></i>
                     <p class="aside-text">Educations</p>
                 </li>
                 <li onclick="Navigate(3)">
                     <i class="fa-solid fa-images"></i>
-                    <p class="aside-text">Skills</p>
+                    <p class="aside-text">Gallery</p>
                 </li>
                 <li onclick="Navigate(4)">
+                    <i class="fa-solid fa-code"></i>
+                    <p class="aside-text">Technologies</p>
+                </li>
+                <li onclick="Navigate(5)">
                     <i class="fa-solid fa-comments"></i>
                     <p class="aside-text">Contact Me</p>
                 </li>
@@ -165,6 +170,9 @@
                     <div class="project"><img src="https://picsum.photos/200/300?random=5" alt=""></div>
                     <div class="project"><img src="https://picsum.photos/200/300?random=6" alt=""></div>
                 </div>
+                <div class="swiper-slide technologies">
+                    <h1 class="heading">Technologies that i work with</h1>
+                </div>
                 <div class="swiper-slide contact-me">
                     <div class="contact-col">
                         <!-- <h1 class="heading">Contact Me</h1> -->
@@ -190,7 +198,7 @@
                         </div> -->
                     </div>
                     <div class="form">
-                        <form>
+                        <form action="https://formsubmit.co/matin.dev22@gmail.com" method="POST">
                             <h2>Send Me A Message
                                 <div class="SocialLinks">
                                     <i class="fa-brands fa-github" data-link="https://github.com/iiMattheww"></i>
@@ -200,16 +208,31 @@
                                     <!-- <i class="fa-brands fa-twitter"></i> -->
                                 </div>
                             </h2>
-                            <input type="text" placeholder="Name">
-                            <input type="text" placeholder="email">
-                            <textarea rows="8" placeholder="Type your Message Here..."></textarea>
-                            <button class="primary send-email--btn">Send</button>
+                            <!-- <input type="hidden" name="_next" value="https://matinborbor.me/thankyou.html"> -->
+                            <input type="text" name="name" placeholder="Name" required>
+                            <input type="email" name="email" placeholder="email" required>
+                            <textarea name="message" rows="8" placeholder="Type your Message Here..."
+                                required></textarea>
+                            <button class="send-email--btn" style="background-color: #1d8637;">
+                                <div class="svg-wrapper-1">
+                                    <div class="svg-wrapper">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                                            height="24">
+                                            <path fill="none" d="M0 0h24v24H0z"></path>
+                                            <path fill="currentColor"
+                                                d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <span>Send</span>
+                            </button>
                         </form>
                     </div>
                 </div>
             </div>
+        </div>
     </main>
-
 </body>
 
 </html>

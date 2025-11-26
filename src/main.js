@@ -1,4 +1,4 @@
-var swiper = new Swiper(".swiper", {
+let swiper = new Swiper(".swiper", {
     effect: "cube",
     allowTouchMove: false,
     grabCursor: false,
