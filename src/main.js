@@ -34,3 +34,15 @@ educationCards.forEach(card => {
         if (url) window.open(url, "_blank");
     });
 });
+
+// Select social icons
+const socialIcons = document.querySelectorAll('.SocialLinks i');
+
+socialIcons.forEach(icon => {
+    icon.style.cursor = "pointer"; // make it look clickable
+
+    icon.addEventListener('click', () => {
+        const url = icon.dataset.link; // read data-link attribute
+        if (url) window.open(url, "_blank"); // open in new tab
+    });
+});
