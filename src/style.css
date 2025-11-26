@@ -84,7 +84,7 @@ aside li i {
     margin: auto 0px;
     flex: 1;
     height: auto;
-
+    font-size: 0.8rem;
     padding: 100px;
     user-select: none;
 }
@@ -207,16 +207,14 @@ aside li i {
 
 .swiper-slide {
     width: 100%;
-
     background-color: #343a40;
     height: 100%;
 }
 
-.about-us {
+.about-me {
     width: 100%;
     height: 100%;
-
-    padding: 100px;
+    padding: 20px 50px;
     color: white;
 }
 
@@ -226,7 +224,7 @@ aside li i {
     color: #80ed99;
 }
 
-.about-us h3 {
+.about-me h3 {
     padding: 10px;
 }
 
@@ -302,20 +300,23 @@ aside li i {
     border-radius: 20px;
 }
 
-.services {
+/*-------------------- education part --------------------*/
+
+.educations {
     color: white;
     display: grid;
     grid-template-columns: repeat(3, calc(34% - 10px));
     grid-template-rows: 100px calc(50% - 50px) calc(50% - 50px);
-    padding: 100px;
+    overflow: auto;
+    padding: 50px;
     box-sizing: border-box;
 }
 
-.services .heading {
+.educations .heading {
     grid-column: 1 / span 3;
 }
 
-.services .service {
+.educations .education {
     display: flex;
     text-align: center;
     justify-content: center;
@@ -325,31 +326,29 @@ aside li i {
     margin: 20px;
     backdrop-filter: blur(10px);
     flex-direction: column;
-
     transition-duration: 0.25s;
+    font-size: 0.8rem;
+    position: relative;
 }
 
-.services .service i {
-    font-size: 3rem;
+.education h3 {
     color: #80ed99;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%); /* centers it horizontally */
 }
-
-.services .service .service-icon {
-    padding: 0px 50px;
-    border-radius: 5px;
-    margin: 20px auto;
-}
-.service h2 {
-    color: #80ed99;
-}
-.service:hover {
+.education:hover {
     background-color: #80ed99;
     color: #176d2d;
 }
-.service:hover h2,
-.service:hover i {
+
+.education:hover h3 {
     color: #176d2d;
 }
+
+/* ----------- gallery -----------*/
 
 .gallery {
     display: grid;
@@ -386,6 +385,8 @@ aside li i {
     border: none;
 }
 
+/*---------------- contactMe ---------------- */
+
 .contactMe {
     display: grid;
     grid-template-columns: 20% 80%;
@@ -393,12 +394,13 @@ aside li i {
             25% - 20px
         );
     position: relative;
-    padding: 100px;
+    overflow: auto;
+    padding: 50px;
 }
 
 .contactMe h1 {
     grid-column: 1 / span 3;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     padding: 30px;
 }
 
@@ -406,7 +408,7 @@ aside li i {
     grid-area: 2/2 / span 5 / span 2;
 }
 
-.contactinfo {
+.contact-info {
     display: flex;
     flex-direction: column;
     padding: 10px;
@@ -416,14 +418,20 @@ aside li i {
     align-items: center;
 }
 
-.contactinfo i {
-    padding: 10px;
-    font-size: 2.5rem;
+/* .info-title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+} */
+
+.contact-info i {
+    font-size: 1.5rem;
     color: #80ed99;
-    margin: 20px auto;
+    margin: auto;
 }
 
-.contactinfo h3 {
+.contact-info h3 {
     color: #80ed99;
 }
 
@@ -508,6 +516,46 @@ form h2 .SocialLinks i {
 form h2 .SocialLinks i:hover {
     background-color: #176d2d;
 }
-.about-us {
+.about-me {
     overflow: auto;
+}
+
+/* @media (max-width: 900px) {
+    aside {
+        width: 120px;
+    }
+    .aside-text {
+        display: hidden;
+    }
+} */
+
+.sidebar {
+    width: 280px;
+    transition: width 0.3s ease;
+}
+
+.aside-text {
+    transition: opacity 0.2s ease;
+    white-space: nowrap;
+}
+
+/* Small screens: collapse sidebar */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 80px;
+    }
+
+    /* Hide text smoothly */
+    .aside-text {
+        opacity: 0;
+        pointer-events: none;
+        width: 0;
+        overflow: hidden;
+    }
+
+    /* Center icons since text is hidden */
+    aside li {
+        justify-content: center;
+        padding: 20px 0;
+    }
 }

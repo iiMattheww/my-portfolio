@@ -14,22 +14,27 @@
 
 <body>
     <main>
-        <aside>
+        <aside class="sidebar">
             <ul class="Links">
-                <li onclick="Navigate(0)" class="activeLink"><i class="fa-solid fa-house"></i>
-                    <p>Home</p>
+                <li onclick="Navigate(0)" class="activeLink">
+                    <i class="fa-solid fa-house"></i>
+                    <p class="aside-text">Home</p>
                 </li>
-                <li onclick="Navigate(1)"><i class="fa-solid fa-user"></i>
-                    <p>About Me</p>
+                <li onclick="Navigate(1)">
+                    <i class="fa-solid fa-user"></i>
+                    <p class="aside-text">About Me</p>
                 </li>
-                <li onclick="Navigate(2)"><i class="fa-solid fa-list"></i>
-                    <p>Educations</p>
+                <li onclick="Navigate(2)">
+                    <i class="fa-solid fa-list"></i>
+                    <p class="aside-text">Educations</p>
                 </li>
-                <li onclick="Navigate(3)"><i class="fa-solid fa-images"></i>
-                    <p>Skills</p>
+                <li onclick="Navigate(3)">
+                    <i class="fa-solid fa-images"></i>
+                    <p class="aside-text">Skills</p>
                 </li>
-                <li onclick="Navigate(4)"><i class="fa-solid fa-comments"></i>
-                    <p>Contact Me</p>
+                <li onclick="Navigate(4)">
+                    <i class="fa-solid fa-comments"></i>
+                    <p class="aside-text">Contact Me</p>
                 </li>
             </ul>
         </aside>
@@ -58,7 +63,7 @@
                     </p>
                 </div>
                 <div class="swiper-slide">
-                    <div class="about-us">
+                    <div class="about-me">
                         <h1 class="heading">About Me</h1>
                         <h3 class="sub-heading">I'm Matin, <span class="proffesions">A Front-End Web Developer</span>
                         </h3>
@@ -120,42 +125,35 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide services">
+                <div class="swiper-slide educations">
                     <h1 class="heading">Courses that i passed</h1>
-                    <div class="service">
-                        <!-- <div class="service-icon"><i class="fa-solid fa-pen-ruler"></i></div> -->
-                        <h2>By Ali Hejazi</h2>
-                        <p>Python Programming 2023</p>
+                    <div class="education" data-link="https://www.pytopia.ai/en/courses/python">
+                        <p>Pytopia-Python Programming 2023</p>
+                        <h3>By Ali Hejazi</h3>
                     </div>
-                    <div class="service">
-                        <!-- <div class="service-icon"><i class="fa-solid fa-globe"></i></div> -->
-                        <h2>By Maximilian Schwarzmüller</h2>
-                        <p>Udemy - JavaScript - The Complete Guide 2024 (Beginner + Advanced) 2024</p>
+                    <div class="education" data-link="https://www.udemy.com/course/tailwind-from-scratch/">
+                        <p>Udemy - Tailwind CSS From Scratch Learn By Building Projects 2025</p>
+                        <h3>By Brad Traversy</h3>
                     </div>
-                    <div class="service">
-                        <!-- <div class="service-icon"><i class="fa-solid fa-magnifying-glass"></i></div> -->
-                        <h2>By Maximilian Schwarzmüller</h2>
-                        <p>Udemy - React - The Complete Guide 2025 (incl. Next.js, Redux) 2025</p>
+                    <div class="education"
+                        data-link="https://www.udemy.com/course/tailwind-from-scratch/?srsltid=AfmBOorOnkborQW3L5mEefHJnS8rV-Pkow0obCYADxovHLlUuZ0qdzqU&couponCode=CP251118G3">
+                        <p>Udemy - The Ultimate MySQL Bootcamp: Go from SQL Beginner to Expert 2023</p>
+                        <h3>By Colt Steele</h3>
                     </div>
-                    <div class="service">
-                        <!-- <div class="service-icon"><i class="fa-solid fa-image"></i></div> -->
-                        <h2>By Maximilian Schwarzmüller</h2>
-                        <p>Udemy - CSS - The Complete Guide 2025 (incl. Flexbox, Grid & Sass) 2025</p>
+                    <div class="education"
+                        data-link="https://www.udemy.com/course/javascript-the-complete-guide-2020-beginner-advanced/">
+                        <p>Udemy - JavaScript - The Complete Guide (Beginner + Advanced) 2024</p>
+                        <h3>By Maximilian Schwarzmüller</h3>
                     </div>
-                    <div class="service">
-                        <!-- <div class="service-icon"><i class="fa-solid fa-mobile-screen-button"></i></div> -->
-                        <h2>By Brad Traversy</h2>
-                        <p>Udemy - Tailwind CSS From Scratch  Learn By Building Projects 2025</p>
+                    <div class="education"
+                        data-link="https://www.udemy.com/course/react-the-complete-guide-incl-redux/">
+                        <p>Udemy - React - The Complete Guide (incl. Next.js, Redux) 2025</p>
+                        <h3>By Maximilian Schwarzmüller</h3>
                     </div>
-                    <div class="service">
-                        <!-- <div class="service-icon"><i class="fa-solid fa-database"></i></div> -->
-                        <h2>Database Admin</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, quod.</p>
-                    </div>
-                    <div class="service">
-                        <!-- <div class="service-icon"><i class="fa-solid fa-database"></i></div> -->
-                        <h2>Database Admin</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, quod.</p>
+                    <div class="education"
+                        data-link="https://www.udemy.com/course/css-the-complete-guide-incl-flexbox-grid-sass/?couponCode=CP251118G3">
+                        <p>Udemy - CSS - The Complete Guide (incl. Flexbox, Grid & Sass) 2023</p>
+                        <h3>By Maximilian Schwarzmüller</h3>
                     </div>
                 </div>
                 <div class="swiper-slide gallery">
@@ -169,21 +167,33 @@
                 </div>
                 <div class="swiper-slide contactMe">
                     <h1 class="heading">Contact Me</h1>
-                    <div class="contactinfo"><i class="fa-solid fa-phone"></i>
+                    <div class="contact-info">
+                        <!-- <div class="info-title">
+                            <i class="fa-solid fa-phone"></i>
+                            <h3>Mobile No</h3>
+                        </div> -->
+                        <i class="fa-solid fa-phone"></i>
                         <h3>Mobile No</h3>
-                        <p>123-456-7890</p>
+                        <p>+98-9352765280</p>
                     </div>
-                    <div class="contactinfo"><i class="fa-solid fa-location-dot"></i>
+                    <div class="contact-info">
+                        <!-- <div class="info-title">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <h3>Location</h3>
+                        </div> -->
+                        <i class="fa-solid fa-location-dot"></i>
                         <h3>Location</h3>
-                        <p>Somewhere On Earth</p>
+                        <p>Tehran</p>
                     </div>
-                    <div class="contactinfo"><i class="fa-regular fa-envelope"></i>
+                    <div class="contact-info">
+                        <i class="fa-regular fa-envelope"></i>
                         <h3>Email</h3>
-                        <p>abc123@gmail.com</p>
+                        <p>matin.dev22@gmail.com</p>
                     </div>
-                    <div class="contactinfo"><i class="fa-solid fa-globe"></i>
+                    <div class="contact-info">
+                        <i class="fa-solid fa-globe"></i>
                         <h3>Website</h3>
-                        <p>www.abc123.com</p>
+                        <p>Matinborbor.me</p>
                     </div>
                     <form>
                         <h2>Send Me A Message <div class="SocialLinks">

@@ -21,3 +21,16 @@ function Navigate(indx) {
     );
     swiper.slideTo(indx, 1000, true);
 }
+
+
+// Select all education cards
+const educationCards = document.querySelectorAll('.education');
+
+educationCards.forEach(card => {
+    card.style.cursor = "pointer"; // make it look clickable
+
+    card.addEventListener('click', () => {
+        const url = card.dataset.link; // read the data-link attribute
+        if (url) window.open(url, "_blank");
+    });
+});
