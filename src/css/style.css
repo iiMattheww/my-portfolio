@@ -20,6 +20,8 @@ main {
     font-family: Poppins;
 }
 
+/* --------- aside ---------*/
+
 aside {
     width: 280px;
     display: flex;
@@ -65,6 +67,8 @@ aside li::after {
 aside li i {
     font-size: 1.3rem;
 }
+/* ------------------ */
+
 .activeLink {
     color: #80ed99;
 }
@@ -137,6 +141,8 @@ aside li i {
     border-bottom-right-radius: 3px;
 }
 
+/* ------------ HomeContent ------------ */
+
 .HomeContent h1 {
     font-size: 3em;
     font-weight: 700;
@@ -195,6 +201,8 @@ aside li i {
     background-color: #343a40;
     height: 100%;
 }
+
+/* ------------ about-me ------------*/
 
 .about-me {
     overflow: auto;
@@ -521,7 +529,6 @@ aside li i {
 .social-icon-4 {
     transition-duration: 0.4s;
     transition-timing-function: cubic-bezier(0.46, -0.78, 0.5, 1.56);
-
     /* background: linear-gradient(
         180deg,
         rgba(129, 34, 144, 1) 0%,
@@ -666,20 +673,6 @@ form h2 .SocialLinks i {
 form h2 .SocialLinks i:hover {
     background-color: #176d2d;
 }
-
-/* footer {
-    position: absolute;
-    bottom: 0px;
-    right: 0px;
-    text-align: center;
-    color: white;
-    width: 100%;
-    font-weight: 200;
-    font-size: 0.8rem;
-}
-footer li {
-    padding: 10px;
-} */
 
 .sidebar {
     width: 280px;
