@@ -51,7 +51,8 @@
                         <h2>A <span class="proffesions">Front-End Web Developer</span></h2>
                         <p class="heroline">Passionate about building beautiful, functional UIs and constantly pushing
                             my skills forward.</p>
-                        <div class="buttonGroup"><button>Hire Me</button><button>Contact Me</button></div>
+                        <div class="buttonGroup"><button class="hire-me-btn" onclick="Navigate(5)"><span>Hire Me</span></button>
+                        </div>
                     </div>
                     <div class="SideImg">
                         <div class="top-right-corner">
@@ -92,7 +93,9 @@
                                 <li><span>Age</span>:27</li>
                                 <li><span>Phone</span>:+98-9352765280</li>
                                 <li><span>Degree</span>:Bachelor</li>
-                                <div class="buttonGroup"><button>Hire Me</button><button>Contact Me</button></div>
+                                <div class="buttonGroup">
+                                    <button class="hire-me-btn" onclick="Navigate(5)"><span>Hire Me</span></button>
+                                </div>
                             </div>
 
                             <div class="skill-bar">
@@ -162,51 +165,48 @@
                     </div>
                 </div>
                 <div class="swiper-slide gallery">
-                    <h1 class="heading">Gallery</h1>
+                    <h3 class="heading">Here u can see some examples of my works</h3>
                     <!-- From Uiverse.io by gharsh11032000 -->
                     <div class="card">
                         <img class="card-img" src="./assets/Images/login-modal.png" alt="">
                         <div class="card__content">
-                            <p class="card__title">Card Title</p>
-                            <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                quis nostrud exercitation ullamco.</p>
+                            <p class="card__title">Login Form</p>
+                            <p class="card__description">simple responsive login form built with Tailwind CSS with a
+                                modern design for login to an app</p>
                         </div>
                     </div>
                     <div class="card">
                         <img class="card-img" src="./assets/Images/image-gallery.png" alt="">
                         <div class="card__content">
-                            <p class="card__title">Card Title</p>
-                            <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                quis nostrud exercitation ullamco.</p>
+                            <p class="card__title">Image Gallery</p>
+                            <p class="card__description">simple responsive image gallery with hover effects built with
+                                Tailwind CSS with a
+                                modern design for showing images to user</p>
                         </div>
                     </div>
                     <div class="card">
                         <img class="card-img" src="./assets/Images/product-modal.png" alt="">
                         <div class="card__content">
-                            <p class="card__title">Card Title</p>
-                            <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                quis nostrud exercitation ullamco.</p>
+                            <p class="card__title">Shopping Card</p>
+                            <p class="card__description">simple responsive shopping card built with Tailwind CSS with a
+                                modern design for online shops</p>
                         </div>
                     </div>
                     <div class="card">
                         <img class="card-img" src="./assets/Images/email-subscrib-2.png" alt="">
                         <div class="card__content">
-                            <p class="card__title">Card Title</p>
-                            <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                quis nostrud exercitation ullamco.</p>
+                            <p class="card__title">Email Subscribe</p>
+                            <p class="card__description">small responsive email subscribe card built with Tailwind CSS
+                                with a
+                                modern design</p>
                         </div>
                     </div>
                     <div class="card">
                         <img class="card-img" src="./assets/Images/testimonial-grid.png" alt="">
                         <div class="card__content">
-                            <p class="card__title">Card Title</p>
-                            <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                quis nostrud exercitation ullamco.</p>
+                            <p class="card__title">Testimonial Grid</p>
+                            <p class="card__description">responsive testimonial grid built with Tailwind CSS
+                                with a modern design for show some testimonials to user</p>
                         </div>
                     </div>
                     <!-- <div class="card">
@@ -369,7 +369,6 @@
                 </div>
                 <div class="swiper-slide contact-me">
                     <div class="contact-col">
-                        <!-- <h1 class="heading">Contact Me</h1> -->
                         <div class="contact-info">
                             <i class="fa-solid fa-phone"></i>
                             <h3>Mobile No</h3>
@@ -385,11 +384,6 @@
                             <h3>Email</h3>
                             <p>matin.dev22@gmail.com</p>
                         </div>
-                        <!-- <div class="contact-info">
-                            <i class="fa-solid fa-globe"></i>
-                            <h3>Website</h3>
-                            <p>Matinborbor.me</p>
-                        </div> -->
                     </div>
                     <div class="form">
                         <form action="https://formsubmit.co/matin.dev22@gmail.com" method="POST">

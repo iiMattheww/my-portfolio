@@ -22,27 +22,40 @@ function Navigate(indx) {
     swiper.slideTo(indx, 1000, true);
 }
 
-
 // Select all education cards
-const educationCards = document.querySelectorAll('.education');
+const educationCards = document.querySelectorAll(".education");
 
-educationCards.forEach(card => {
+educationCards.forEach((card) => {
     card.style.cursor = "pointer"; // make it look clickable
 
-    card.addEventListener('click', () => {
+    card.addEventListener("click", () => {
         const url = card.dataset.link; // read the data-link attribute
         if (url) window.open(url, "_blank");
     });
 });
 
 // Select social icons
-const socialIcons = document.querySelectorAll('.SocialLinks i');
+const socialIcons = document.querySelectorAll(".SocialLinks i");
 
-socialIcons.forEach(icon => {
+socialIcons.forEach((icon) => {
     icon.style.cursor = "pointer"; // make it look clickable
 
-    icon.addEventListener('click', () => {
+    icon.addEventListener("click", () => {
         const url = icon.dataset.link; // read data-link attribute
         if (url) window.open(url, "_blank"); // open in new tab
     });
 });
+
+
+// Hire me btn code
+const syncPointer = ({ x: pointerX, y: pointerY }) => {
+    const x = pointerX.toFixed(2);
+    const y = pointerY.toFixed(2);
+    const xp = (pointerX / window.innerWidth).toFixed(2);
+    const yp = (pointerY / window.innerHeight).toFixed(2);
+    document.documentElement.style.setProperty("--x", x);
+    document.documentElement.style.setProperty("--xp", xp);
+    document.documentElement.style.setProperty("--y", y);
+    document.documentElement.style.setProperty("--yp", yp);
+};
+document.body.addEventListener("pointermove", syncPointer);
