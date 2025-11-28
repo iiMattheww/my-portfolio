@@ -1,5 +1,4 @@
-/* author: https://codepen.io/MuzammalAhmed/pen/qBGVZPe
-Muzammal Ahmed */
+/* author: Matin Borbor */
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bonbon&display=swap");
@@ -21,7 +20,6 @@ main {
 }
 
 /* --------- aside ---------*/
-
 aside {
     width: 280px;
     display: flex;
@@ -67,8 +65,8 @@ aside li::after {
 aside li i {
     font-size: 1.3rem;
 }
-/* ------------------ */
 
+/* -------- home ---------- */
 .activeLink {
     color: #80ed99;
 }
@@ -94,7 +92,6 @@ aside li i {
 
 .SideImg {
     width: 30%;
-
     margin: auto 10px;
     margin-right: 100px;
     position: relative;
@@ -140,8 +137,6 @@ aside li i {
     border: none;
     border-bottom-right-radius: 3px;
 }
-
-/* ------------ HomeContent ------------ */
 
 .HomeContent h1 {
     font-size: 3em;
@@ -203,7 +198,6 @@ aside li i {
 }
 
 /* ------------ about-me ------------*/
-
 .about-me {
     overflow: auto;
     width: 100%;
@@ -295,7 +289,6 @@ aside li i {
 }
 
 /*-------------------- education part --------------------*/
-
 .educations {
     color: white;
     display: grid;
@@ -343,7 +336,6 @@ aside li i {
 }
 
 /* ----------- gallery -----------*/
-
 .gallery {
     display: grid;
     grid-template-columns: repeat(3, 33%);
@@ -432,7 +424,6 @@ aside li i {
 }
 
 /* ----------- technologies ----------- */
-
 .technologies {
     padding: 100px 100px;
     display: flex;
@@ -541,7 +532,6 @@ aside li i {
 }
 
 /*---------------- contact-me ---------------- */
-
 .contact-me {
     display: grid;
     grid-template-columns: 20% 80%;
@@ -684,30 +674,8 @@ form h2 .SocialLinks i:hover {
     white-space: nowrap;
 }
 
-/* Small screens: collapse sidebar */
-@media (max-width: 768px) {
-    .sidebar {
-        width: 80px;
-    }
-
-    /* Hide text smoothly */
-    .aside-text {
-        opacity: 0;
-        pointer-events: none;
-        width: 0;
-        overflow: hidden;
-    }
-
-    /* Center icons since text is hidden */
-    aside li {
-        justify-content: center;
-        padding: 20px 0;
-    }
-}
-
 /* ---------------- Custom Scrollbar (applies project-wide) ---------------- */
 /* WebKit-based browsers (Chrome, Edge, Safari) */
-
 *::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
     background-color: #f5f5f5;
@@ -735,4 +703,121 @@ form h2 .SocialLinks i:hover {
 * {
     scrollbar-width: thin;
     scrollbar-color: #25c32b #f5f5f5;
+}
+
+/* ------------- Responsive --------------- */
+/* Small screens: collapse sidebar */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 80px;
+    }
+
+    /* Hide text smoothly */
+    .aside-text {
+        opacity: 0;
+        pointer-events: none;
+        width: 0;
+        overflow: hidden;
+    }
+
+    /* Center icons since text is hidden */
+    aside li {
+        justify-content: center;
+        padding: 20px 0;
+    }
+}
+
+/* Small screens: collapse sidebar */
+@media (max-width: 640px) {
+    .HomeContent {
+        /* font-size: 0.8rem; */
+        padding: 10px 20px;
+    }
+    .home-slide {
+        flex-direction: column-reverse;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    .SideImg {
+        width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin: 100px 0;
+    }
+
+    .SideImg img {
+        width: 50%;
+        /* height: 100%; */
+        /* margin: 0;
+        padding: 0; */
+    }
+
+    .SideImg .top-right-corner,
+    .bottom-left-corner {
+        position: absolute;
+    }
+
+    .bottom-left-corner {
+        left: 30px;
+        bottom: -25px;
+        rotate: -90deg;
+    }
+
+    .top-right-corner {
+        right: 30px;
+        top: -30px;
+        rotate: 90deg;
+    }
+
+    .HomeContent h1 {
+        font-size: 2em;
+        font-weight: 550;
+    }
+
+    .HomeContent h2 {
+        font-size: 1.3em;
+        font-weight: 600;
+    }
+
+    .HomeContent .heroline {
+        font-size: 1rem;
+        padding-right: 0;
+    }
+
+    .buttonGroup {
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    /*
+    .slide-help {
+        position: absolute;
+        bottom: 10px;
+        width: 100%;
+        text-align: center;
+        font-weight: 400;
+        z-index: 100;
+        left: 0%;
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 1.2rem;
+    } */
+
+    /* .mySwiper {
+        width: 80vw;
+        height: 100vh;
+        overflow: hidden;
+        background-color: #343a40;
+    }
+
+    .swiper-slide {
+        width: 100%;
+        background-color: #343a40;
+        height: 100%;
+    } */
 }
