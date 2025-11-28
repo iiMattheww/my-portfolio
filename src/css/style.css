@@ -77,6 +77,7 @@ aside li i {
 
 .home-slide {
     color: white;
+    overflow:auto;
     display: flex;
     background-color: #343a40;
 }
@@ -920,16 +921,83 @@ form h2 .SocialLinks i:hover {
         margin: 20px 0px;
     }
 
-    /* ------------ tech ----------- */
-    .technologies {
+    /* ----------- tech icons----------- */
+    .social-login-icons {
         flex-direction: column;
+        -webkit-box-reflect: unset; /* Removes reflection on phone */
     }
 
-    .tech-icons--lg {
+    .technologies {
+        padding: 50px 20px;
+    }
+
+    /* ----------- contact me ------------ */
+    /* 1. Stack the Contact Info and The Form vertically */
+    .contact-me {
+        display: flex; /* Disable the 20/80 Grid */
+        flex-direction: column; /* Stack them on top of each other */
+        padding: 40px 15px; /* Reduce the huge side padding */
+        height: auto; /* Allow the height to grow as needed */
+    }
+
+    /* 2. Arrange Contact Info in a row (optional, looks better on top) */
+    .contact-col {
+        flex-direction: row; /* Put icons side-by-side */
+        flex-wrap: wrap; /* Allow wrapping if screen is very small */
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .contact-info {
+        padding: 10px;
+        flex: 1; /* Distribute space evenly */
+        min-width: 100px; /* Prevent them from squishing too much */
+    }
+
+    /* 3. Fix the Form Layout */
+    .contact-me form {
+        display: flex; /* Disable the 50/50 Grid inside the form */
+        flex-direction: column; /* Stack inputs vertically */
+        width: 100%;
+        padding: 0;
+    }
+
+    /* 4. Fix Inputs to be full width */
+    .contact-me form input,
+    .contact-me form textarea {
+        width: 100%; /* Force full width */
+        margin: 10px 0; /* Adjust spacing */
+        box-sizing: border-box; /* Ensure padding doesn't break width */
+    }
+
+    /* 5. Fix the "Send Me a Message" header and Social Icons */
+    .contact-me form h2 {
+        flex-direction: column; /* Stack text and icons if needed */
+        font-size: 1.5rem;
+        gap: 15px;
+    }
+
+    form h2 .SocialLinks {
+        margin: 0 auto; /* Center the icons */
+    }
+
+    .contact-col .gmail {
         display: none;
     }
-
-    .social-login-icons {
-        margin-top:100px;
+    .gmail-sm {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        font-size: 1rem;
+        color: #80ed99;
+        margin-bottom: 0.5rem;
+    }
+    .gmail-sm p {
+        color: white;
+    }
+    .gmail-sm i {
+        font-size: 1.5rem;
     }
 }
