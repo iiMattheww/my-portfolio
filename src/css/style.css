@@ -524,6 +524,7 @@ aside li i {
     display: grid;
     grid-template-columns: 20% 80%;
     position: relative;
+    overflow:auto;
     /* keep the section to the slide height and center its content vertically */
     /* overflow: auto; */
     padding: 0 50px; /* remove vertical padding so content can truly center */
