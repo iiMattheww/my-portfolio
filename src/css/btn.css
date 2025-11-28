@@ -54,7 +54,7 @@
 
 /* ------------ hire me btn ----------*/
 
-.hire-me-btn {
+.btn-hire--me {
     all: unset;
     display: flex;
     align-items: center;
@@ -71,20 +71,20 @@
     user-select: none;
 }
 
-.hire-me-btn p {
+.btn-hire--me p {
     z-index: 1;
 }
 
-.hire-me-btn:hover {
+.btn-hire--me:hover {
     color: #ffff;
 }
 
-.hire-me-btn:active {
+.btn-hire--me:active {
     border-color: teal;
 }
 
-.hire-me-btn::after,
-.hire-me-btn::before {
+.btn-hire--me::after,
+.btn-hire--me::before {
     content: "";
     position: absolute;
     width: 9em;
@@ -95,25 +95,25 @@
     transition: transform 500ms, background 300ms;
 }
 
-.hire-me-btn::before {
+.btn-hire--me::before {
     left: 0;
     transform: translateX(-8em);
 }
 
-.hire-me-btn::after {
+.btn-hire--me::after {
     right: 0;
     transform: translateX(8em);
 }
 
-.hire-me-btn:hover:before {
+.btn-hire--me:hover:before {
     transform: translateX(-1em);
 }
 
-.hire-me-btn:hover:after {
+.btn-hire--me:hover:after {
     transform: translateX(1em);
 }
 
-.hire-me-btn:active:before,
-.hire-me-btn:active:after {
+.btn-hire--me:active:before,
+.btn-hire--me:active:after {
     background: teal;
 }

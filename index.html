@@ -52,7 +52,7 @@
                         <p class="heroline">Passionate about building beautiful, functional UIs and constantly pushing
                             my skills forward.</p>
                         <div class="buttonGroup">
-                            <button class="hire-me-btn" onclick="Navigate(5)">
+                            <button class="btn-hire--me" onclick="Navigate(5)">
                                 <p>Hire Me</p>
                             </button>
                         </div>
@@ -90,30 +90,29 @@
                         </p>
                         <div class="about-me-divison">
                             <div class="about-me-table">
-                                <li><span>Experience:</span> 2+ years</li>
-                                <li><span>Country:</span> Iran</li>
-                                <li><span>Avability:</span> 24/7 </li>
-                                <li><span>Age</span>:27</li>
+                                <li><span>Experience:</span><br hidden> 2+ years</li>
+                                <li><span>Country:</span><br hidden> Iran</li>
+                                <li><span>Avability:</span><br hidden> 24/7 </li>
+                                <li><span>Age</span><br hidden>:27</li>
                                 <li><span>Phone</span>:+98-9352765280</li>
-                                <li><span>Degree</span>:Bachelor</li>
-                                <div class="buttonGroup">
-                                    <button class="hire-me-btn" onclick="Navigate(5)">
+                                <li><span>Degree</span><br hidden>:Bachelor</li>
+                                <div class="btn-hire--me__container">
+                                    <button class="btn-hire--me" onclick="Navigate(5)">
                                         <p>Hire Me</p>
                                     </button>
                                 </div>
                             </div>
-
                             <div class="skill-bar">
                                 <li>
                                     <p>HTML</p>
                                     <div class="bar">
-                                        <div class="active-bar" style="width:99%"></div>
+                                        <div class="active-bar" style="width:95%"></div>
                                     </div>
                                 </li>
                                 <li>
                                     <p>CSS</p>
                                     <div class="bar">
-                                        <div class="active-bar" style="width:80%"></div>
+                                        <div class="active-bar" style="width:60%"></div>
                                     </div>
                                 </li>
                                 <li>
@@ -129,11 +128,28 @@
                                     </div>
                                 </li>
                                 <li>
-                                    <p>Python</p>
+                                    <p>tailwind</p>
+                                    <div class="bar">
+                                        <div class="active-bar" style="width:70%"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>bootstrap</p>
                                     <div class="bar">
                                         <div class="active-bar" style="width:40%"></div>
                                     </div>
                                 </li>
+                                <li>
+                                    <p>Python</p>
+                                    <div class="bar">
+                                        <div class="active-bar" style="width:45%"></div>
+                                    </div>
+                                </li>
+                            </div>
+                            <div class="btn-hire--me__invis" hidden>
+                                <button class="btn-hire--me" onclick="Navigate(5)">
+                                    <p>Hire Me</p>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -425,3 +441,68 @@
 </body>
 
 </html>
+
+<div class="swiper-slide technologies">
+    <div class="social-login-icons">
+        <div class="socialcontainer">
+            <div class="icon social-icon-1-1">
+                <svg viewBox="0 0 1024 1024" fill="none">
+                </svg>
+            </div>
+            <div class="social-icon-1">
+                <svg viewBox="0 0 1024 1024" fill="none">
+                </svg>
+            </div>
+        </div>
+        <div class="socialcontainer">
+            <div class="icon social-icon-2-2">
+                <svg viewBox="0 0 1052 1052">
+                </svg>
+            </div>
+            <div class="social-icon-2">
+                <svg viewBox="0 0 1052 1052">
+                </svg>
+            </div>
+        </div>
+        <div class="socialcontainer">
+            <div class="icon social-icon-3-3">
+                <svg viewBox="0 0 452 520" style="transform: scale(0.87)">
+                </svg>
+            </div>
+            <div class="social-icon-3">
+                <svg viewBox="0 0 452 520" style="transform: scale(0.87)">
+                </svg>
+            </div>
+        </div>
+        <div class="socialcontainer">
+            <div class="icon social-icon-4-4">
+                <svg viewBox="0 0 512 512">
+                </svg>
+            </div>
+            <div class="social-icon-4">
+                <svg viewBox="0 0 512 512">
+                </svg>
+            </div>
+        </div>
+        <div class="socialcontainer">
+            <div class="icon social-icon-4-4">
+                <svg viewBox="0 0 569 512" xmlns:xlink="http://www.w3.org/1999/xlink">
+                </svg>
+            </div>
+            <div class="social-icon-4">
+                <svg viewBox="0 0 569 512" xmlns:xlink="http://www.w3.org/1999/xlink">
+                </svg>
+            </div>
+        </div>
+        <div class="socialcontainer">
+            <div class="icon social-icon-4-4">
+                <svg fill="none" viewBox="0 0 54 33">
+                </svg>
+            </div>
+            <div class="social-icon-4">
+                <svg fill="none" viewBox="0 0 54 33">
+                </svg>
+            </div>
+        </div>
+    </div>
+</div>

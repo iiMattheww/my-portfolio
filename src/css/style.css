@@ -165,12 +165,6 @@ aside li i {
     padding-right: 50px;
 }
 
-.buttonGroup {
-    display: flex;
-    padding: 10px 0px;
-    margin-top: 10px;
-}
-
 .slide-help {
     position: absolute;
     bottom: 10px;
@@ -250,13 +244,6 @@ aside li i {
     color: #80ed99;
     font-weight: bold;
     margin-right: 5px;
-}
-
-.about-me-table .buttonGroup {
-    grid-column: 1 / span 2;
-    justify-content: center;
-    padding: 50px;
-    flex: 1;
 }
 
 .skill-bar {
@@ -674,6 +661,29 @@ form h2 .SocialLinks i:hover {
     white-space: nowrap;
 }
 
+/* -------- hire me btns ------- */
+.buttonGroup {
+    display: flex;
+    padding: 10px 0px;
+    margin-top: 10px;
+}
+
+.btn-hire--me__container {
+    display: flex;
+    padding: 10px 0px;
+    margin-top: 10px;
+}
+
+.about-me-table .btn-hire--me__container {
+    grid-column: 1 / span 2;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 10px;
+    padding: 50px;
+    flex: 1;
+}
+
 /* ---------------- Custom Scrollbar (applies project-wide) ---------------- */
 /* WebKit-based browsers (Chrome, Edge, Safari) */
 *::-webkit-scrollbar-track {
@@ -730,7 +740,6 @@ form h2 .SocialLinks i:hover {
 /* Small screens: collapse sidebar */
 @media (max-width: 640px) {
     .HomeContent {
-        /* font-size: 0.8rem; */
         padding: 10px 20px;
     }
     .home-slide {
@@ -752,9 +761,6 @@ form h2 .SocialLinks i:hover {
 
     .SideImg img {
         width: 50%;
-        /* height: 100%; */
-        /* margin: 0;
-        padding: 0; */
     }
 
     .SideImg .top-right-corner,
@@ -794,30 +800,136 @@ form h2 .SocialLinks i:hover {
         text-align: center;
         align-items: center;
     }
-    /*
-    .slide-help {
-        position: absolute;
-        bottom: 10px;
-        width: 100%;
-        text-align: center;
-        font-weight: 400;
-        z-index: 100;
-        left: 0%;
-        width: 100%;
-        box-sizing: border-box;
-        font-size: 1.2rem;
-    } */
 
-    /* .mySwiper {
-        width: 80vw;
-        height: 100vh;
-        overflow: hidden;
-        background-color: #343a40;
+    .slide-help {
+        bottom: 7%;
     }
 
-    .swiper-slide {
+    /* ------ about me ------- */
+    .about-me {
+        overflow: auto;
         width: 100%;
-        background-color: #343a40;
         height: 100%;
-    } */
+        padding: 10px 20px;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    .heading {
+        padding: 20px 0px;
+        font-size: 2rem;
+    }
+
+    .aboutme-deatils {
+        padding: 15px;
+        font-size: 1rem;
+    }
+
+    .about-me-divison {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    .about-me-table {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+    }
+
+    .about-me-table br {
+        display: block;
+    }
+
+    .btn-hire--me__container {
+        display: none;
+    }
+
+    .btn-hire--me__invis {
+        display: flex;
+        padding: 10px 0px;
+        margin-top: 10px;
+    }
+
+    .skill-bar {
+        width: calc(100% - 20px);
+    }
+
+    /* -------------------- */
+    .educations {
+        display: flex;
+        overflow: auto;
+        padding: 20px 10px;
+        box-sizing: border-box;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    .educations .education {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        padding: 15px;
+        margin: 15px 20px;
+        flex-direction: column;
+        font-size: 0.8rem;
+        position: static;
+    }
+
+    .education h3 {
+        color: #80ed99;
+        position: static;
+        padding-top: 10px;
+        transform: none;
+    }
+
+    .educations .heading {
+        position: static;
+        font-size: 1.2rem;
+    }
+
+    /* -------------------- */
+    .gallery {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin: 0;
+        padding: 15px 35px;
+        overflow: auto;
+        width: 100%;
+        height: 100%;
+    }
+
+    .gallery h3 {
+        color: white;
+        font-weight: 600;
+        font-size: 1.2rem;
+        padding: 0px 0px;
+        color: #80ed99;
+    }
+
+    .card {
+        width: 100%;
+        height: 100%;
+        margin: 20px 0px;
+    }
+
+    /* ------------ tech ----------- */
+    .technologies {
+        flex-direction: column;
+    }
+
+    .tech-icons--lg {
+        display: none;
+    }
+
+    .social-login-icons {
+        margin-top:100px;
+    }
 }
